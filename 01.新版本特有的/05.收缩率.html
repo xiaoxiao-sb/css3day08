@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            height: 200px;
+            border-bottom: 5px solid green;
+            /*display: -webkit-box;*/
+            display: flex;
+            width: 400px;
+        }
+        .box{
+            width: 200px;
+            /*收缩率   加给子元素*/
+            /*默认值*/
+            /*flex-shrink: 1;*/
+            /*不压缩*/
+            /*flex-shrink: 0;*/
+            /*flex-shrink 收缩率，收缩率越大元素的宽度就越小*/
+            /*
+                将超出的部分根据设置压缩率的总数进行平均分份  然后在从元素身上压缩相应的份数
+            */
+        }
+        .box1{
+            background: deeppink;
+            flex-shrink: 1;
+        }
+        .box2{
+            background: yellowgreen;
+            flex-shrink: 2;
+        }
+        .box3{
+            background: greenyellow;
+            flex-shrink: 3;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

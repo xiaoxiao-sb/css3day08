@@ -1,0 +1,7 @@
+/*我是需要的注释*/
+.wrap {
+  one: 1;
+}
+.wrap .box {
+  three: 2;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#wrap {
+  width: 500px;
+  border: 1px solid #000;
+  margin: 100px auto;
+}
+#wrap .list {
+  background: pink;
+}
+#wrap .list li {
+  height: 50px;
+}
+#wrap .list li:nth-child(1) {
+  background: yellowgreen;
+}
+#wrap .list li:nth-child(3) a::after {
+  content: '我是新增的内容';
+}
+#wrap .list li:hover {
+  background: blue;
+}
+#wrap .list li:hover a {
+  color: #fff;
+}
+#wrap .list li:hover a::after {
+  content: '我是新增的内容';
+}

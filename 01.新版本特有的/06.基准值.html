@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            height: 200px;
+            border-bottom: 5px solid green;
+
+            /*display: -webkit-box;*/
+            display: flex;
+
+
+        }
+        .box{
+            /*等分布局*/
+            /*flex-grow: 1;*/
+            /*基准值*/
+            /*flex-basis: 0;*/
+            /*width: 0;*/
+            /*flex是一个简写属性
+                flex-basis: auto;
+                flex-shrink: 1;
+                flex-grow: 0;
+            */
+            flex: 1;
+            /*
+                flex-basis: 0;
+                flex-shrink: 1;
+                flex-grow: 1;
+            */
+        }
+
+        .box1{
+            background: deeppink;
+
+        }
+        .box2{
+            background: yellowgreen;
+
+        }
+        .box3{
+            background: greenyellow;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div class="box box1">1111111111111111111111111111</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

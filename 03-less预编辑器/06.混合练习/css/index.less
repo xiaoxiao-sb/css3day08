@@ -1,0 +1,21 @@
+@import "mixin";
+@import "reset";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#wrap{
+  .juzhong(@w:500px,@h:500px,@bg:pink);
+  .box1{
+    .juzhong(@w:400px,@h:400px,@bg:indianred);
+  }
+  .box2{
+    .juzhong(@w:300px,@h:300px,@bg:blue);
+  }
+  .box3{
+    .juzhong();
+  }
+}
+
+  .highbox(@c:box,@w:1000px);

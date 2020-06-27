@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            margin: 200px auto;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #000000;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        .box{
+            width: 12px;
+            height: 12px;
+            background: #000;
+            border-radius: 50%;
+        }
+        #top,#bottom{
+            display: flex;
+            justify-content: space-around;
+        }
+        /*#top{*/
+            /*background: pink;*/
+        /*}*/
+        /*#bottom{*/
+            /*background: yellowgreen;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div id="top">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+    <div id="bottom">
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var box = document.getElementById('box');
+
+
+    }
+</script>
+</html>

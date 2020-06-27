@@ -1,0 +1,38 @@
+.box-shadow(@w,@h,@c){
+  //翘边阴影效果
+  //结构 <div class="box"></div>
+  /*
+    @w 宽度
+    @h 高度
+    @c  指定类名（class）
+  */
+  .@{c}{
+    width: @w;
+    height: @h;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3),0 0 40px rgba(0,0,0,0.1) inset;
+    position: relative;
+    &:before,&:after{
+      content: '';
+      position: absolute;
+      top:20px;
+      bottom: 20px;
+      background: pink;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      z-index: -2;
+    }
+    &:before{
+      transform: skew(-12deg) rotate(-4deg);
+      left:26px;
+      right:12px;
+    }
+    &:after{
+      background: yellowgreen;
+      transform: skew(12deg) rotate(4deg);
+      left:12px;
+      right:26px;
+    }
+  }
+}
+
+.box-shadow(@w:400px,@h:200px,@c:box);

@@ -1,0 +1,46 @@
+*{
+  margin:0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+//直接嵌套默认用的是后代选择器
+//使用less是  要注意嵌套的层数 如果当前的大容器相对而言很独立  可是摘出来
+//&的作用    伪类   伪元素    css3结构类
+#wrap{
+  width: 500px;
+  border: 1px solid #000;
+  margin:100px auto;
+  .list{
+    background: pink;
+    li{
+      height: 50px;
+      //代表这个元素之前的所有父级
+      &:nth-child(1){
+        background: yellowgreen;
+      }
+      &:nth-child(3){
+        a{
+
+          &::after{
+            content: '我是新增的内容';
+          }
+        }
+      }
+      &:hover{
+        background: blue;
+        a{
+          color: #fff;
+          &::after{
+            content: '我是新增的内容';
+          }
+        }
+      }
+    }
+
+  }
+}
